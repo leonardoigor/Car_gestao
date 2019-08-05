@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const Router = require('./routes/Router')
+const RouterAdmin = require('./routes/Router')
 const handlebars = require('express-handlebars')
 const bodyparser = require('body-parser')
 const path = require('path')
@@ -19,5 +20,6 @@ app.engine('handlebars', handlebars())
 app.set('view engine', 'handlebars')
 // ROUTES
 app.use('/', Router)
+app.use('/admin', RouterAdmin)
 
 app.listen(PORT, () => console.log(` Server ON ${PORT}`))
