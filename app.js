@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'src')))
 app.use(bodyparser.urlencoded({ extended: true }))
 app.use(bodyparser.json())
 // view engine
-app.engine('handlebars', handlebars({ defaultLayout: 'main' }))
+app.engine('handlebars', handlebars())
 app.set('view engine', 'handlebars')
 // ROUTES
 app.use('/', Router)
