@@ -7,12 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>car</title>
     <link rel="stylesheet" href="/css/_nav.css">
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
     {{> _navbar}}
+    <div class="container">
+        {{> _msg}}
+    </div>
     <div style="margin-top: 20px">
         {{{body}}}
     </div>

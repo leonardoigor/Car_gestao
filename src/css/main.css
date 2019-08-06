@@ -4,3 +4,6 @@
   list-style: none;
   text-decoration: none;
 }
+body{
+  background: rgba(0,0,0,0.2);
+}

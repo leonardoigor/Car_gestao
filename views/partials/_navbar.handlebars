@@ -18,12 +18,20 @@
                     aria-haspopup="true" aria-expanded="false">
                     Profile
                 </a>
+                {{#if connected}}
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Settings</a>
                     <a class="dropdown-item" href="#">friends</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Logout</a>
                 </div>
+                {{else}}
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/login">Loggin</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/register">Register</a>
+                </div>
+                {{/if}}
             </li>
 
         </ul>
